@@ -25,7 +25,7 @@ Note: in April 2025 "Gitpod classic" will be discontinued fully, in favour of "G
 
 - TODO assess impact on Gitpod-based labs.
 
-https://gitpod.io/new/#https://github.com/hemidactylus/ollama-lab-demos
+[Open in Gitpod](https://gitpod.io/new/#https://github.com/hemidactylus/ollama-lab-demos)
 
 Left as an exercise:
 
