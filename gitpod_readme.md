@@ -2,6 +2,9 @@
 
 `ollama` should be up and running while you read this.
 
+**Note**: on Gitpod,
+> Ollama will run in CPU-only mode.
+
 Open a Python REPL (`python` in the console, then _Enter_) and try the following code:
 
 ```python

@@ -27,6 +27,9 @@ Note: in April 2025 "Gitpod classic" will be discontinued fully, in favour of "G
 
 [Open in Gitpod](https://gitpod.io/new/#https://github.com/hemidactylus/ollama-lab-demos)
 
+**Note**: on Gitpod,
+> Ollama will run in CPU-only mode.
+
 Left as an exercise:
 
 1. using more specialized Python libraries, e.g. `langchain-ollama` (see notebooks for details);
