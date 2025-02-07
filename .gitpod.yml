@@ -1,0 +1,11 @@
+tasks:
+  - name: setup
+    before: |
+      echo SETUP BEFORE | tee -a ./setup.log
+    init: |
+      echo SETUP INIT | tee -a ./setup.log
+    command: |
+      echo SETUP COMMAND | tee -a ./setup.log
+github:
+  prebuilds:
+    main: true
