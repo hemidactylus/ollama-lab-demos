@@ -1,11 +1,17 @@
 tasks:
   - name: setup
     before: |
-      echo SETUP BEFORE | tee -a ./setup.log
+      sudo apt update | tee -a ./.gitpod_logs/setup_before.log
+      sudo apt install -y pciutils | tee -a ./.gitpod_logs/setup_before.log
     init: |
-      echo SETUP INIT | tee -a ./setup.log
+      curl -fsSL https://ollama.com/install.sh | sh | tee -a ./.gitpod_logs/setup_init.log
+      # Note: replacing with tinyllama does not reduce the response times, only the footprint.
+      ollama pull llama3.2 | tee -a ./.gitpod_logs/setup_init.log
     command: |
-      echo SETUP COMMAND | tee -a ./setup.log
+      ollama serve >> ./.gitpod_logs/ollama_stdout.log 2>>./.gitpod_logs/ollama_stderr.log &
+      echo -e ""
+      echo -e "\n\n\t\t** READY TO START... **\n\n"
+      gp open gitpod_readme.md
 github:
   prebuilds:
     main: true

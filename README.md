@@ -9,16 +9,19 @@ Demos about running ollama within "lab environments"
 
 ### The "xterm" way
 
-[Open in Colab](https://colab.research.google.com/github/hemidactylus/ollama-lab-demos/blob/main/ollama1_xterm.ipynb)
+[Open in Colab](https://colab.research.google.com/github/hemidactylus/ollama-lab-demos/blob/main/ollama1_xterm.ipynb), [view here](ollama1_xterm.ipynb)
 
 _(adapted from [this](https://medium.com/@abonia/running-ollama-in-google-colab-free-tier-545609258453))_
 
 ### The in-thread way
 
-[Open in Colab](https://colab.research.google.com/github/hemidactylus/ollama-lab-demos/blob/main/ollama2_threading.ipynb)
+[Open in Colab](https://colab.research.google.com/github/hemidactylus/ollama-lab-demos/blob/main/ollama2_threading.ipynb), [view here](ollama2_threading.ipynb)
 
 _(adapted from [this](https://github.com/5aharsh/collama/blob/main/Ollama_Setup.ipynb))_
 
 ## Gitpod
 
-TODO
+Note: in April 2025 "Gitpod classic" will be discontinued fully, in favour of "Gitpod Flex" ([blog post](https://www.gitpod.io/blog/introducing-gitpod-flex)).
+
+- TODO assess impact on Gitpod-based labs.
+
