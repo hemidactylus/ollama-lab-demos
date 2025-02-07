@@ -8,6 +8,7 @@ tasks:
       (curl -fsSL https://ollama.com/install.sh | sh) 2>&1 | tee -a ./.gitpod_logs/setup_init.log
       # Note: replacing with tinyllama does not reduce the response times, only the footprint.
       sleep 20
+      echo ABOUT TO PULL | tee -a ./.gitpod_logs/setup_init.log
       ollama pull llama3.2 | tee -a ./.gitpod_logs/setup_init.log
       sleep 5
     command: |
