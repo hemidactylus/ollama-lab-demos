@@ -7,13 +7,13 @@ tasks:
     init: |
       (curl -fsSL https://ollama.com/install.sh | sh) 2>&1 | tee -a ./.gitpod_logs/setup_init.log
       # Note: replacing with tinyllama does not reduce the response times, only the footprint.
-      sleep 20
-      echo ABOUT TO PULL | tee -a ./.gitpod_logs/setup_init.log
+      sleep 5
+      ollama serve >> ./.gitpod_logs/ollama_stdout.log 2>>./.gitpod_logs/ollama_stderr.log &
+      sleep 5
+      # One cannot call "ollama so-and-so" before launching with "serve" (here there's no systemd)
       ollama pull llama3.2 2>&1 | tee -a ./.gitpod_logs/setup_pull.log
       sleep 5
     command: |
-      sleep 10
-      ollama serve >> ./.gitpod_logs/ollama_stdout.log 2>>./.gitpod_logs/ollama_stderr.log &
       echo -e ""
       echo -e "\n\n\t\t** READY TO START... **\n\n"
       gp open gitpod_readme.md
