@@ -3,9 +3,11 @@ tasks:
     before: |
       sudo apt update | tee -a ./.gitpod_logs/setup_before.log
       sudo apt install -y pciutils | tee -a ./.gitpod_logs/setup_before.log
+      sleep 10
     init: |
-      curl -fsSL https://ollama.com/install.sh | sh | tee -a ./.gitpod_logs/setup_init.log
+      curl -fsSL https://ollama.com/install.sh | sh 2&>1 | tee -a ./.gitpod_logs/setup_init.log
       # Note: replacing with tinyllama does not reduce the response times, only the footprint.
+      sleep 10
       ollama pull llama3.2 | tee -a ./.gitpod_logs/setup_init.log
     command: |
       ollama serve >> ./.gitpod_logs/ollama_stdout.log 2>>./.gitpod_logs/ollama_stderr.log &

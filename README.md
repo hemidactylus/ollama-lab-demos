@@ -25,3 +25,9 @@ Note: in April 2025 "Gitpod classic" will be discontinued fully, in favour of "G
 
 - TODO assess impact on Gitpod-based labs.
 
+https://gitpod.io/new/#https://github.com/hemidactylus/ollama-lab-demos
+
+Left as an exercise:
+
+1. using more specialized Python libraries, e.g. `langchain-ollama` (see notebooks for details);
+2. setting up a Katapod scenario with an `ollama` instance running alongside it.

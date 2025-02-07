@@ -2,9 +2,9 @@
 
 `ollama` should be up and running while you read this.
 
-Open a Python REPL and try the following code:
+Open a Python REPL (`python` in the console, then _Enter_) and try the following code:
 
-```
+```python
 import json
 import requests
 
@@ -27,7 +27,7 @@ print(resp_json["response"])
 
 You may also want to inspect the following files:
 
-- `gitpod_logs/setup_before.log`, `gitpod_logs/setup_init.log`; and, most importantly,
-- `gitpod_logs/ollama_stdout.log` and `gitpod_logs/ollama_stderr.log`.
+- `.gitpod_logs/setup_before.log`, `.gitpod_logs/setup_init.log`; and, most importantly,
+- `.gitpod_logs/ollama_stdout.log` and `.gitpod_logs/ollama_stderr.log`.
 
 This is all.
