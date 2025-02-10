@@ -21,16 +21,10 @@ _(adapted from [this](https://github.com/5aharsh/collama/blob/main/Ollama_Setup.
 
 ## Gitpod
 
-Note: in April 2025 "Gitpod classic" will be discontinued fully, in favour of "Gitpod Flex" ([blog post](https://www.gitpod.io/blog/introducing-gitpod-flex)).
-
-- TODO assess impact on Gitpod-based labs.
+> [!IMPORTANT]
+> In April 2025 "Gitpod classic" will be discontinued fully, in favour of "Gitpod Flex" ([blog post](https://www.gitpod.io/blog/introducing-gitpod-flex)). This will disrupt usage of Katapod in a way that will be not easily recoverable.
 
 [Open in Gitpod](https://gitpod.io/new/#https://github.com/hemidactylus/ollama-lab-demos)
 
 **Note**: on Gitpod,
 > Ollama will run in CPU-only mode.
-
-Left as an exercise:
-
-1. using more specialized Python libraries, e.g. `langchain-ollama` (see notebooks for details);
-2. setting up a Katapod scenario with an `ollama` instance running alongside it.
